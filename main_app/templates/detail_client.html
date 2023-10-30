@@ -4,6 +4,16 @@
 
 <html data-wf-page="64d1f06e1f48b9132aaa1427" data-wf-site="64cca45de377e022d6560ca0">
 <head>
+  <style>
+    .container {
+        border: 1px ridge #ccc;
+        padding: 80px;
+        border-radius: 50px;
+        width: 500px;
+        
+       
+    }
+</style>
   <meta charset="utf-8">
   <title>OTIS | KPMG</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -459,12 +469,8 @@ new Chart(document.getElementById("doughnut-chart"), {
                           <div class="form-field-wrapper"><label for="Asset-ID" class="heading-4">Domain</label><input type="text" class="input w-input" maxlength="256" name="Assed-ID" data-name="Assed ID" placeholder="" id="Asset-ID"></div>
                           <div class="form-field-wrapper"><label for="Asset-ID-2" class="heading-4">Asset ID</label><input type="text" class="input w-input" maxlength="256" name="Assed-ID" data-name="Assed ID" placeholder="" id="Asset-ID"></div>
                           <div class="form-field-wrapper"><label for="Contact-Modal-4-Message" class="field-label-2">Message</label><textarea id="Contact-Modal-4-Message" name="Contact-Modal-4-Message" maxlength="5000" data-name="Contact Modal 4 Message" placeholder="Type your message..." class="input w-input"></textarea></div>
-                          <div id="w-node-c1d30848-ada2-8147-867a-237f1e487dde-2aaa1427" class="w-embed w-iframe w-script"><iframe data-tally-src="https://tally.so/embed/merllJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="227" frameborder="0" marginheight="0" marginwidth="0" title="upload files"></iframe>
-                            <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-                          </div>
-                          <div id="w-node-_01bbcbce-77b9-6233-a818-9a38d605905b-2aaa1427" class="w-embed w-iframe w-script"><iframe data-tally-src="https://tally.so/embed/3y4rNB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="638" frameborder="0" marginheight="0" marginwidth="0" title="                   Asset request form"></iframe>
-                            <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-                          </div>
+                          <div class="container"><label for="fileToUpload">Select an APK or IPA File:</label><input type="file" name="fileToUpload" id="fileToUpload" accept=".apk, .ipa" required></div>
+
                           <div class="margin-bottom margin-xsmall"><label id="Contact-2-Checkbox" class="w-checkbox form-checkbox">
                               <div class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox-icon"></div><input type="checkbox" id="Contact-Modal-4-Checkbox" name="Contact-Modal-4-Checkbox" data-name="Contact Modal 4 Checkbox" required="" style="opacity:0;position:absolute;z-index:-1"><span for="Contact-Modal-4-Checkbox" class="form-checkbox-label text-size-small w-form-label">I accept the terms</span>
                             </label></div><input type="submit" value="Submit" data-wait="Please wait..." id="w-node-e671365c-90e8-be9f-2239-d347fa384578-2aaa1427" class="btn-primary w-button">
