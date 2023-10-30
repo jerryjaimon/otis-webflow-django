@@ -350,6 +350,8 @@
                     <div class="text-100 medium text-uppercase">report</div>
                   </div>
                 </div>
+                {% for scan in scans %}
+
                 <div class="w-dyn-list">
                   <div role="list" class="w-dyn-items">
                     <div role="listitem" class="w-dyn-item">
@@ -376,7 +378,7 @@
                                 <div>Oops! Something went wrong while submitting the form.</div>
                               </div>
                             </div>
-                            <div class="text-200"></div>
+                            <div class="text-200">{{scan.scan_slug}}</div>
                           </div>
                         </div>
                         <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2bb-7621a7d3" class="table-item">
@@ -384,25 +386,26 @@
                             <div class="text-100 medium text-uppercase">Asset</div>
                           </div>
                           <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2bf-7621a7d3"
-                            class="text-200 medium color-neutral-800"></div>
+                            class="text-200 medium color-neutral-800">asset_name</div>
                         </div>
                         <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2c1-7621a7d3" class="table-item">
                           <div class="table-item-mobile-caption">
                             <div class="text-100 medium text-uppercase">Start date</div>
                           </div>
-                          <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2c5-7621a7d3" class="text-200"></div>
+                          <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2c5-7621a7d3" class="text-200">{{scan.scan_start}}</div>
                         </div>
                         <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2c7-7621a7d3" class="table-item">
                           <div class="table-item-mobile-caption">
                             <div class="text-100 medium text-uppercase">End date</div>
                           </div>
-                          <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2cb-7621a7d3" class="text-200"></div>
+                          <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2cb-7621a7d3" class="text-200">{{scan.scan_end}}</div>
                         </div>
                         <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2cd-7621a7d3" class="table-item">
                           <div class="table-item-mobile-caption">
-                            <div class="text-100 medium text-uppercase">status</div>
+                            <div class="text-100 medium text-uppercase">Status</div>
                           </div>
                           <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2d1-7621a7d3" class="badge-secondary green">
+                            Completed
                           </div>
                         </div>
                         <div id="w-node-_9f75985f-d916-379b-748d-5b664525d2d3-7621a7d3" class="table-item last">
@@ -422,10 +425,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-dyn-empty">
-                    <div>No items found.</div>
-                  </div>
                 </div>
+                {% endfor %}
               </div>
             </div>
             <div class="grid-2-columns products-bottom-modules">
