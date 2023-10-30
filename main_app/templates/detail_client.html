@@ -485,7 +485,7 @@
                   alt="">
               </div>
               <div id="w-node-_6ab4c824-fcf2-9689-4294-66505335cb18-2aaa1427"
-                data-w-id="6ab4c824-fcf2-9689-4294-66505335cb18" style="opacity:0" class="module graph">
+                data-w-id="6ab4c824-fcf2-9689-4294-66505335cb18" style="opacity: 1;" class="module graph">
                 <div id="w-node-_6ab4c824-fcf2-9689-4294-66505335cb1a-2aaa1427">
                   <div class="heading-h3-size">Vulnerability pecentage</div>
                 </div>
@@ -498,11 +498,41 @@
                           <div class="recent-orders-details-container">
                             <div class="mg-right-16px">
                               <div class="mg-bottom-6px">
-                                <div class="text-200 bold color-neutral-800"></div>
+                                <div class="text-200 bold color-neutral-800">Esign</div>
                               </div>
                             </div>
                             <div class="mg-left-auto mg-left-0-mbp mg-bottom-auto">
-                              <div class="badge-primary"></div>
+                              <div class="badge-primary">80</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="listitem" class="collection-item w-dyn-item">
+                        <div class="divider top-28px---bottom-36px bg-neutral-300"></div>
+                        <div class="flex align-center">
+                          <div class="recent-orders-details-container">
+                            <div class="mg-right-16px">
+                              <div class="mg-bottom-6px">
+                                <div class="text-200 bold color-neutral-800">Appdome</div>
+                              </div>
+                            </div>
+                            <div class="mg-left-auto mg-left-0-mbp mg-bottom-auto">
+                              <div class="badge-primary">60</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="listitem" class="collection-item w-dyn-item">
+                        <div class="divider top-28px---bottom-36px bg-neutral-300"></div>
+                        <div class="flex align-center">
+                          <div class="recent-orders-details-container">
+                            <div class="mg-right-16px">
+                              <div class="mg-bottom-6px">
+                                <div class="text-200 bold color-neutral-800">SalesU X</div>
+                              </div>
+                            </div>
+                            <div class="mg-left-auto mg-left-0-mbp mg-bottom-auto">
+                              <div class="badge-primary">78</div>
                             </div>
                           </div>
                         </div>
@@ -565,19 +595,16 @@
                       </div>
                       <div class="contact-modal4_form-block w-form">
                         <form id="wf-form-Contact-Modal-4-Form" name="wf-form-Contact-Modal-4-Form"
-                          data-name="Contact Modal 4 Form" method="get" class="contact-modal4_form"
-                          data-wf-flow="62c83ea33de4a76db1f44d81" data-wf-page-id="64d1f06e1f48b9132aaa1427"
-                          data-wf-element-id="e671365c-90e8-be9f-2239-d347fa38453a">
-                          <div class="form-field-2col">
-                            <div class="form-field-wrapper"><label for="Contact-4-First-Name" class="heading-4">Client
-                                name</label><input type="text" class="input w-input" maxlength="256"
-                                name="Contact-4-First-Name" data-name="Contact 4 First Name" placeholder=""
-                                id="Contact-4-First-Name" required=""></div>
-                            <div class="form-field-wrapper"><label for="Contact-4-Last-Name" class="heading-4">Asset
-                                name</label><input type="text" class="input w-input" maxlength="256"
-                                name="Contact-4-Last-Name" data-name="Contact 4 Last Name" placeholder=""
-                                id="Contact-4-Last-Name" required=""></div>
-                          </div>
+                          data-name="Contact Modal 4 Form" method="post" class="contact-modal4_form"
+                          action="{% url 'form_submission' %}" data-wf-flow="62c83ea33de4a76db1f44d81"
+                          data-wf-page-id="64d1f06e1f48b9132aaa1427"
+                          data-wf-element-id="e671365c-90e8-be9f-2239-d347fa38453a"
+                          enctype="multipart/form-data">
+
+                          <div class="form-field-wrapper"><label for="Contact-4-Last-Name" class="heading-4">Asset
+                              name</label><input type="text" class="input w-input" maxlength="256"
+                              name="Contact-4-Last-Name" data-name="Contact 4 Last Name" placeholder=""
+                              id="Contact-4-Last-Name" required=""></div>
                           <div class="form-field-2col is-mobile-1col">
                             <div class="form-field-wrapper"><label for="Username" class="heading-4">Username
                               </label><input type="text" class="input w-input" maxlength="256" name="Username"
@@ -606,6 +633,8 @@
                                 data-name="Contact Modal 4 Checkbox" required=""
                                 style="opacity:0;position:absolute;z-index:-1"><span for="Contact-Modal-4-Checkbox"
                                 class="form-checkbox-label text-size-small w-form-label">I accept the terms</span>
+                              {% csrf_token %}
+
                             </label></div><input type="submit" value="Submit" data-wait="Please wait..."
                             id="w-node-e671365c-90e8-be9f-2239-d347fa384578-2aaa1427" class="btn-primary w-button">
                         </form>
