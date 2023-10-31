@@ -24,8 +24,10 @@ def asset_page(request,slug):
     return render(request, 'detail_asset.html',context)
 
 def report_page(request):
-    scan_data()
     return render(request, 'detail_reports.html')
+
+def login_page(request):
+    return render(request, 'log-in.html')
 
 def submit_application(request):
     if request.method == 'POST':
